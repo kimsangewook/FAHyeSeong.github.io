@@ -3,73 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>중소기업 기계설비 회사</title>
-    <link rel="stylesheet" href="/FAHyeSeong.github.io/css/style.css">
+    <title>TechEver - 기계설비</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <!-- 헤더 -->
-    <header>
-        <div class="logo">
-            <h1>기계설비 회사111</h1>
+    <header class="fade-in">
+        <div class="container">
+            <div class="logo">
+                <h1>TechEver</h1>
+            </div>
+            <nav>
+              <ul>
+                  <li><a href="#about">회사 소개</a></li>
+                  <li><a href="#services">서비스</a></li>
+                  <!-- 드롭다운 메뉴 -->
+                  <li class="dropdown">
+                      <a href="#" class="dropbtn">프로젝트</a>
+                      <div class="dropdown-content">
+                          <a href="#">프로젝트 1</a>
+                          <a href="#">프로젝트 2</a>
+                          <a href="#">프로젝트 3</a>
+                      </div>
+                  </li>
+                  <li><a href="#contact">연락처</a></li>
+                  <li><a href="#reviews">고객 리뷰</a></li>
+              </ul>
+          </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">회사 소개</a></li>
-                <li><a href="#services">서비스</a></li>
-                <li><a href="#contact">연락처</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- 메인 배너 -->
-    <section class="banner">
-        <h2>기계설비와 함께 성장하는 미래</h2>
-        <p>고품질 기계설비로 고객의 생산성을 높입니다.</p>
+    <section class="main-banner fade-in-up">
+        <div class="container">
+            <h2>고품질 기계설비로 미래를 만듭니다</h2>
+            <p>TechEver는 지속 가능한 기계설비 솔루션을 제공합니다.</p>
+            <a href="#services" class="cta-button zoom-in">서비스 보기</a>
+        </div>
     </section>
 
     <!-- 회사 소개 -->
-    <section id="about" class="about">
-        <h3>회사 소개</h3>
-        <p>우리는 신뢰와 품질을 바탕으로 20년 이상의 경력을 가진 기계설비 전문 기업입니다. 최신 기술을 사용하여 고객에게 최고의 솔루션을 제공합니다.</p>
+    <section id="about" class="about fade-in">
+        <div class="container">
+            <h3>회사 소개</h3>
+            <p>TechEver는 혁신적인 기계설비 서비스를 제공하는 회사로, 고객의 요구에 맞춰 최상의 솔루션을 제공합니다.</p>
+        </div>
     </section>
 
     <!-- 서비스 -->
     <section id="services" class="services">
-        <h3>우리의 서비스</h3>
-        <div class="service-item">
-            <h4>설비 설치</h4>
-            <p>최신 기계설비를 효율적으로 설치합니다.</p>
+        <div class="container">
+            <h3>우리의 서비스</h3>
+            <div class="service-item slide-up">
+                <h4>설비 설치</h4>
+                <p>최고의 품질로 설비 설치를 지원합니다.</p>
+            </div>
+            <div class="service-item slide-up delay-1s">
+                <h4>정기 점검</h4>
+                <p>설비의 원활한 운영을 위한 정기 점검 서비스.</p>
+            </div>
+            <div class="service-item slide-up delay-2s">
+                <h4>기계 수리</h4>
+                <p>기계의 긴 수명을 위한 전문적인 수리 서비스.</p>
+            </div>
         </div>
-        <div class="service-item">
-            <h4>정기 점검</h4>
-            <p>설비의 안전하고 원활한 운용을 위한 정기 점검을 제공합니다.</p>
-        </div>
-        <div class="service-item">
-            <h4>기계 수리</h4>
-            <p>기계의 수명 연장을 위한 전문적인 수리 서비스를 제공합니다.</p>
+    </section>
+
+    <!-- 고객 리뷰 -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h3>고객 리뷰</h3>
+            <div class="review-item fade-in">
+                <p>"TechEver의 서비스는 매우 만족스러웠습니다. 우리 공장의 설비가 안정적으로 운영되고 있습니다!"</p>
+                <span>- 고객 A</span>
+            </div>
+            <div class="review-item fade-in delay-1s">
+                <p>"정기 점검 서비스 덕분에 설비의 문제가 미리 해결되었습니다. 감사합니다!"</p>
+                <span>- 고객 B</span>
+            </div>
         </div>
     </section>
 
     <!-- 연락처 -->
     <section id="contact" class="contact">
-        <h3>연락처</h3>
-        <form action="#" method="post">
-            <label for="name">이름:</label>
-            <input type="text" id="name" name="name" required><br>
+        <div class="container">
+            <h3>연락처</h3>
+            <form action="#" method="post">
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" required><br>
 
-            <label for="email">이메일:</label>
-            <input type="email" id="email" name="email" required><br>
+                <label for="email">이메일:</label>
+                <input type="email" id="email" name="email" required><br>
 
-            <label for="message">메시지:</label>
-            <textarea id="message" name="message" required></textarea><br>
+                <label for="message">메시지:</label>
+                <textarea id="message" name="message" required></textarea><br>
 
-            <button type="submit">보내기</button>
-        </form>
+                <button type="submit" class="zoom-in">보내기</button>
+            </form>
+        </div>
     </section>
 
     <!-- 푸터 -->
     <footer>
-        <p>&copy; 2025 기계설비 회사. 모든 권리 보유.</p>
+        <div class="container">
+            <p>&copy; 2025 TechEver. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
