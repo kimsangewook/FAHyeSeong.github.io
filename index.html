@@ -1,30 +1,75 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>우리회사 소개</title>
-  <link rel="stylesheet" href="/css/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중소기업 기계설비 회사</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="회사 로고" class="logo" />
-    <h1>우리회사에 오신 걸 환영합니다</h1>
-  </header>
+    <!-- 헤더 -->
+    <header>
+        <div class="logo">
+            <h1>기계설비 회사</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">회사 소개</a></li>
+                <li><a href="#services">서비스</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section>
-      <h2>회사 소개</h2>
-      <p>저희는 웹 솔루션을 개발하는 작은 기업입니다. 고객과의 신뢰를 최우선으로 생각합니다.</p>
+    <!-- 메인 배너 -->
+    <section class="banner">
+        <h2>기계설비와 함께 성장하는 미래</h2>
+        <p>고품질 기계설비로 고객의 생산성을 높입니다.</p>
     </section>
-    <section>
-      <h2>연락처</h2>
-      <p>이메일: contact@ourcompany.com<br/>전화: 02-1234-5678</p>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 우리회사. 모든 권리 보유.</p>
-  </footer>
+    <!-- 회사 소개 -->
+    <section id="about" class="about">
+        <h3>회사 소개</h3>
+        <p>우리는 신뢰와 품질을 바탕으로 20년 이상의 경력을 가진 기계설비 전문 기업입니다. 최신 기술을 사용하여 고객에게 최고의 솔루션을 제공합니다.</p>
+    </section>
+
+    <!-- 서비스 -->
+    <section id="services" class="services">
+        <h3>우리의 서비스</h3>
+        <div class="service-item">
+            <h4>설비 설치</h4>
+            <p>최신 기계설비를 효율적으로 설치합니다.</p>
+        </div>
+        <div class="service-item">
+            <h4>정기 점검</h4>
+            <p>설비의 안전하고 원활한 운용을 위한 정기 점검을 제공합니다.</p>
+        </div>
+        <div class="service-item">
+            <h4>기계 수리</h4>
+            <p>기계의 수명 연장을 위한 전문적인 수리 서비스를 제공합니다.</p>
+        </div>
+    </section>
+
+    <!-- 연락처 -->
+    <section id="contact" class="contact">
+        <h3>연락처</h3>
+        <form action="#" method="post">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">이메일:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">메시지:</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit">보내기</button>
+        </form>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>&copy; 2025 기계설비 회사. 모든 권리 보유.</p>
+    </footer>
 </body>
 </html>
