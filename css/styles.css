@@ -11304,8 +11304,14 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+
 #map{
-  width: 900px; 
+  width: 100%; 
   height: 400px;
   margin: 50px auto;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
 }
