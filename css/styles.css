@@ -11483,3 +11483,7 @@ html,body{
     object-fit: cover;
     display: block;
   }
+
+  #services .text-muted{
+    font-size: 13px;
+  }
