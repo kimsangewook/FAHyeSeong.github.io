@@ -10947,13 +10947,28 @@ header.masthead {
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
+}
+
+header.masthead .masthead-subheading h2 {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   opacity: 0;
   transform: translateY(30px);
-  animation: fadeSlideIn 1.2s ease-out forwards;
+  animation: fadeSlideIn 1.0s ease-out forwards;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  animation-delay: 0.3s;
+}
+
+header.masthead .masthead-subheading p {
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 1.0s ease-out forwards;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  animation-delay: 0.7s;
 }
 
 @keyframes fadeSlideIn {
