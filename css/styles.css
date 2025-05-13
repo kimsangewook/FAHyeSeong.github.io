@@ -11413,8 +11413,8 @@ html,body{
   }
 
   .footer-logo {
-    max-width: 150px;
-    height: auto;
+    width: 200px;
+    height: 200px;
   }
 
   .footer-right {
