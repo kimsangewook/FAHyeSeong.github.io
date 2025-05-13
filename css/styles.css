@@ -11390,3 +11390,60 @@ html,body{
   width:200px;
   height: 200px;
 }
+
+.footer {
+    background-color: #F6F6F6;
+    color: #4C4C4C;
+    padding: 30px 20px;
+    font-size: 14px;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-left {
+    flex: 1 1 200px;
+    margin-bottom: 15px;
+  }
+
+  .footer-logo {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .footer-right {
+    flex: 2 1 300px;
+    line-height: 1.6;
+  }
+
+  .footer-right p {
+    margin: 4px 0;
+  }
+
+  .copyright {
+    margin-top: 8px;
+    color: #aaa;
+    font-size: 13px;
+  }
+
+  @media (max-width: 600px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+      flex: 1 1 100%;
+    }
+
+    .footer-logo {
+      margin: 0 auto 10px;
+    }
+  }
