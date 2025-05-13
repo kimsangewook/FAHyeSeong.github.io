@@ -11487,3 +11487,7 @@ html,body{
   #services .text-muted{
     font-size: 13px;
   }
+
+  #about .text-center{
+    margin-bottom: 8rem;
+  } 
