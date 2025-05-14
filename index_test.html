@@ -61,17 +61,27 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
-                        <img src="assets/img/promotion/promotion_1.png" class="promotion"/>
+                        <!-- <img src="assets/img/promotion/promotion_1.png" class="promotion"/> -->
+                         <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-regular fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                        </span>
                         <h4 class="my-3">기계 설비·전기 공사 분야의 전문성</h4>
                         <p class="text-muted">다년간의 노하우와 기술력으로 기계 설비 및 전기 공사를 수행합니다.</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="assets/img/promotion/promotion_2.png" class="promotion"/>
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-regular fa-handshake fa-stack-1x fa-inverse"></i>
+                        </span>
                         <h4 class="my-3">고객 중심의 맞춤형 서비스</h4>
                         <p class="text-muted">현장 맞춤형 솔루션으로, 설계부터 시공까지 최적의 결과를 제공합니다.</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="assets/img/promotion/promotion_3.png" class="promotion"/>
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-headphones fa-stack-1x fa-inverse"></i>
+                        </span>
                         <h4 class="my-3">1년 유지보수(A/S)</h4>
                         <p class="text-muted">시공 후에도 철저한 유지관리로 신뢰를 이어갑니다.</p>
                     </div>
@@ -308,7 +318,7 @@
                     <img src="assets/img/navbar-logo.png" alt="혜성F.A 로고" class="footer-logo" />
                 </div>
                 <div class="footer-right">
-                <p><strong>대표:</strong> 김영길</p>
+                <p><strong>대표:</strong> 김순자</p>
                 <p><strong>사업자등록번호:</strong> 123-45-67890</p>
                 <p><strong>전화:</strong> <a href="tel:01087732859" style="color:#4C4C4C; text-decoration: none;">010-8773-2859</a> | <strong>팩스:</strong> 031-499-9599</p>
                 <p class="copyright">Copyright &copy; 1996 혜성F.A All rights reserved.</p>
@@ -529,47 +539,8 @@
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        
-
         <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7e927664deaba9b1d02ba9e6d5d5c4d3&libraries=services"></script>
-
         <script src="js/scripts.js"></script>
-
-        <script type="text/javascript">
-            window.onload = function () {
-
-                // 무한 롤링을 위한 콘텐츠 복제
-                const banner = document.getElementById('banner');
-                banner.innerHTML += banner.innerHTML; // 콘텐츠 두 번 반복
-
-                // 지도 표시할 div 가져오기
-                const container = document.getElementById('map');
-
-                // 지도 옵션 설정
-                const options = {
-                    center: new kakao.maps.LatLng(37.3364, 126.7210), // 경기도 시흥시 공단1대로 196번길 34 좌표
-                    level: 4 // 확대 레벨
-                };
-
-                // 지도 생성
-                const map = new kakao.maps.Map(container, options);
-
-                // 마커 생성
-                const marker = new kakao.maps.Marker({
-                    position: new kakao.maps.LatLng(37.3364, 126.7210) // 경기도 시흥시 공단1대로 196번길 34 좌표
-                });
-                marker.setMap(map);
-
-                // 주소에 대한 인포윈도우 생성
-                const infowindow = new kakao.maps.InfoWindow({
-                    content: '<div style="padding:5px; width:260px;">경기도 시흥시 공단1대로 196번길 34<br/>정왕동, 시화공단2다 606호</div>'
-                });
-                infowindow.open(map, marker);
-            };
-        </script>
-
-      
-
 
     </body>
 </html>
