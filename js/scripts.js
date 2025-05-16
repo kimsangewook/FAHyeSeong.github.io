@@ -76,6 +76,7 @@ window.onload = function () {
     infowindow.open(map, marker);
     //******************** 오시는 길 END ********************
 
+    //사업현황 공통 modal open
     includeHTML();
 };
 
