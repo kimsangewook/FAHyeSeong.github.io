@@ -102,3 +102,26 @@ function includeHTML() {
   });
 }
 
+
+// 요소가 뷰포트에 보이는지 판단하는 함수
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top < window.innerHeight &&
+    rect.bottom > 0
+  );
+}
+
+function checkFadeIn() {
+  const sections = document.querySelectorAll('.fade-section');
+  sections.forEach(section => {
+    if (isInViewport(section)) {
+      section.classList.add('visible');
+    }
+  });
+}
+
+// 스크롤, 로딩 시 확인
+window.addEventListener('scroll', checkFadeIn);
+window.addEventListener('load', checkFadeIn);
+

@@ -11486,3 +11486,19 @@ html,body{
     font-size: 15px;
   }
   
+
+ section {
+  padding: 5rem 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2.0s ease-out, transform 2.0s ease-out; 
+  
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+} 
